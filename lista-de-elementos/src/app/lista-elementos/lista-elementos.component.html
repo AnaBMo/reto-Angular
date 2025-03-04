@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Lista de Elementos</h2>
+  
+    <input type="text" [(ngModel)]="nuevoElemento" placeholder="Agregar un elemento">
+    <button (click)="agregarElemento()">Agregar</button>
+  
+    <ul>
+      <li *ngFor="let elemento of elementos">{{ elemento }}</li>
+    </ul>
+</div>  
